@@ -1,5 +1,3 @@
-/* Provided by the course instructor */
-
 :root {
   --color-lightest: #fff4e6;
   --color-light: #ffe8cc;
@@ -30,7 +28,7 @@ body {
 .app {
   min-height: 66vh;
   display: grid;
-  grid-template-columns: 34rem 44rem;
+  grid-template-columns: 30rem 40rem;
   column-gap: 4rem;
   align-items: start;
 }
@@ -120,7 +118,7 @@ form {
 }
 
 .form-add-friend {
-  grid-template-columns: 1fr 1.5fr;
+  grid-template-columns: max-content 1fr;
   margin-bottom: 1.6rem;
   padding: 1.2rem;
 }
@@ -133,14 +131,15 @@ label {
   font-weight: 500;
 }
 
-label::first-letter {
+/* label::first-letter {
   display: inline-block;
   margin-right: 4px;
   font-size: 1.8rem;
-}
+} */
 
 input,
 select {
+  width: 100%;
   font-family: inherit;
   color: inherit;
   font-size: 1.5rem;
